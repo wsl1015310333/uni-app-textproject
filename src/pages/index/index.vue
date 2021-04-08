@@ -1,49 +1,30 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+    <view class="rpx">rpx</view>
+    <view class="vw">vw</view>
+    <view clas="sass">sass</view>
 	</view>
 </template>
 
 <script>
 	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
 
-		},
-		methods: {
-
-		}
 	}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+<style lang="scss">
+.rpx{
+  width: 750rpx;
+  height: 100px;
+  background-color: #4cd964;
+}
+.vw{
+  width:50vw;
+  height: 100px;
+  background-color: #3F536E;
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
+}
+.content{
 
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+}
 </style>
